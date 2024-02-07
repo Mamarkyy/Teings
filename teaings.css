@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9DB70;
+    color: black;
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+    padding: 5px 5px 3px 5px;
+}
+.brand-title {
+    font-family: 'Roboto Serif';
+    font-size: 2.375rem;
+    font-weight: 900;
+    position: relative;
+    margin-right: auto;
+    /*/margin: .5rem;/*/
+}
+
+.navbar-links {
+    font-weight: bolder;
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.8rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .brand-title {
+        font-size: 1.375rem;
+    }
+    .navbar-links li a {
+        font-size: 0.75rem;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+section{
+	width: 100%;
+	float: left;
+	height: 100vh;
+	position: relative;
+}
+
+#Home {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;    
+}
+
+.title{
+    text-align: center;
+    font-family: 'Nothing You Could Do';
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 20%;
+    padding-left: 30%;
+    padding-bottom: 20%;
+    padding-right: 30%;
+}
+.t{
+    padding-right: 100px;
+    
+}   
+.hometext{
+    font-family: 'Roboto Serif';
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 900;
+    width: 58%;
+	line-height: 18px;
+    bottom: 5px;
+    left: 16px;
+}
+#About {
+    background-image: url(images/background\ 2.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+}
+.ontopabout{
+    font-family: 'NTR', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    background: #B13D3D; 
+    border-radius: 100px;
+    position: absolute;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: 45%;
+	width: 225px;
+}
+.aboutus{
+    font-family: 'Roboto Serif', serif;
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    
+}
+
+#Learn {
+    background-image: url(images/background\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;   
+}
+
+.ontopjusttea {
+    position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-family: 'NTR', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background: #138038; width: 100%; height: 2.35rem;
+}
+
+.card {
+    background-size: cover;
+    display: inline-block;
+    margin-top: 75px;
+	margin-left: 100px;
+	margin-right: 100px;
+    width: 240px;
+	height: 185px;   
+    cursor: pointer;
+    background-position: center;
+}
+.how {
+    background-image: url(image/how.jpg);
+  
+}
+.art {
+    background-image: url(image/art.jpg);
+}
+.after {
+    background-image: url(image/after.jpg);
+}
+.sleep {
+    background-image: url(image/sleep.jpg);    
+}
+.tea {
+    background-image: url(image/teabody.jpg);
+}
+
+.teaxt {
+    position: top;
+	font-family: 'NTR', sans-serif;
+	font-size: 18px;
+	text-align: left;
+}
+.texthow{
+	margin-left: 100px;
+	margin-top: -260px;
+	width: 255px;
+
+}
+.textart{
+	margin-left: 545px;
+	margin-top: -70px;
+	width: 255px;
+
+}
+.textafter{
+	margin-left: 990px;
+	margin-top: -70px;
+}
+.textsleep{
+	margin-left: 100px;
+	margin-top: 240px;
+}
+.texttea{
+	margin-left: 545px;
+	margin-top: -35px;
+}
+
+.button{
+	position: absolute;
+	background: transparent;
+	font-family: 'NTR', sans-serif;
+    font-size: 25px;
+    margin-left: 7%;
+	margin-top: 10%;
+	width: 205px;
+	height: 53px;
+
+}
+
+
+#Contact {
+    background-image: url(images/background\ 4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+}
+
+.cont{
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+    font-family: 'NTR', sans-serif;
+    background: #B13D3D;
+    border-radius: 100px; 
+    position: relative;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: 45%;
+	width: 225px
+}
+
+.teaandtalk{
+    font-family: 'Nothing You Could Do', cursive;
+    position: relative; 
+    margin-top: 50px;
+	margin-left: 50px;
+    font-style: normal;
+	font-weight: bolder;
+	font-weight: bolder;
+    font-size: 40px;
+    line-height: 47px;
+
+
+}
+
+.fullname{
+	margin-top: 40px;
+	margin-left: 100px;
+	font-size: 15px;
+	line-height: 32px;
+
+}
+
+.textfn{
+
+  	width: 35%;
+  	height: 50px;
+  	padding: 12px 20px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 3px;
+  	font-size: 14px;
+  	resize: none;
+
+
+}
+
+.email{
+	margin-top: 20px;
+	margin-left: 100px;
+	font-size: 15px;
+	line-height: 32px;
+}
+
+.textemail{
+	width: 35%;
+  	height: 50px;
+  	padding: 12px 20px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 3px;
+  	font-size: 14px;
+  	resize: none;
+}
+.password{
+	margin-top: 20px;
+	margin-left: 100px;
+	font-size: 15px;
+	line-height: 32px;
+}
+
+.textpass{
+	width: 35%;
+  	height: 50px;
+  	padding: 10px 18px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 3px;
+  	font-size: 14px;
+  	resize: none;
+}
+
+.message {
+	margin-top: -325px;
+	margin-left: 50%;
+	font-size: 15px;
+	line-height: 32px;
+}
+
+.textmessage{
+	width: 90%;
+	height: 300px;
+	padding: 10px 18px;
+	box-sizing: border-box;
+  	border: 2px solid #ccc;
+	border-radius: 3px;
+  	font-size: 14px;
+	resize: none;
+
+}
+
+.send{
+	margin-top: -325px;
+	margin-left: 50%;
+	width: 100px;
+	height: 30px;
+
+} 
+
+footer {
+    background-size: cover;
+}
+
+.footer{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 50px;
+	background-image: url("images/footer.jpg");
+	background-repeat: no-repeat;    
+}
+.footerabout {
+	margin-left: 125px;
+}
+.footeraboutweb {
+    font-family: 'NTR', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 1000px;
+}
+.footersocial{
+    font-family: 'NTR', sans-serif;
+    font-size: 20px;
+    margin-top: -280px;
+	margin-left: 650px;
+}
+.imglogo {
+	margin-left: 550px;
+}
+.footerbox{
+	margin-top: -95px;
+	margin-left: 610px;
+}
+.footersite{
+    font-family: 'NTR', sans-serif;
+    font-size: 20px;
+	margin-top: -315px;
+	margin-left: 1200px;
+}
+.footerbox2 {
+    font-family: 'NTR', sans-serif;
+	margin-left: 1100px;
+}
+
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+.footer li{
+	line-height: 20px;
+}
+.footer a{
+	text-decoration: none;
+}
+
+
